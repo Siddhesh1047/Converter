@@ -66,15 +66,65 @@ int Temperature()
     }
     
 }
-/*
+
 int AREA()
 {
-    
-    printf("Select from below\n");
-    printf(" 1 = Kilogram --> gram\n 2 = centemeter --> inch\n 3 = litre --> mililitre\n 4 = kilogram --> pound\n 5 = centigrade --> kelvin\n");
+    float num, num2, Hectare, Acre, Square_Kilometer, Square_Meter, Square_Mile, Square_Yard, Square_Foot, Square_Inch;
+    printf("\nSelect from below parameters to start conversion\n\n");
+    printf(" 1 = Hectare,   2 = Acre,   3 = Square_Kilometer,   4 = Square_Meter,   5 = Square_Mile,   6 = Square_Yard,   7 = Square_Foot,   8 = Square_Inch\n\n");
+    printf("Enter code here\n\n");
     scanf("%f", &num);
-    if (num == 1)
+    printf("convert into\n");
+    scanf("%f", &num2);
+
+    if (num == 1 && num2 == 2)
     {
+        printf("\nEnter value in Hectare\n\n");
+        scanf("%f", &Hectare);
+        Acre = (Hectare * 2.471);
+        printf("\nArea in Acre = %.3f Acre\n\n", Acre, Hectare);
+    }
+    
+   
+    
+    
+    return 0;
+   
+}
+
+int main(int argc, char const *argv[])
+{
+    char num;
+    printf("\n");
+    printf("\t\t\t\t\t\t\tWelcome to All IN ONE CONVERTER\n\n");
+    printf("Select from below what you want to convert.\n\n");
+    printf(" A = AREA\tD = DISTANCE\t  T = TEMPERATURE\tV = VOLUME\n\n");
+    scanf("%c", &num);
+
+    switch (num)
+    {
+    case 'T': Temperature();
+              break;
+
+    case 'A': AREA();
+              break;
+              
+
+    default:
+        printf("Selection is wrong. Please enter proper Value.\n");
+    }
+
+    return 0;
+}
+
+/*if (num == 4)
+    {
+        printf("enter weight in kilogram\n");
+        scanf("%f", &kilograms);
+        pound = (kilograms * 2.205);
+        printf("weight in pounds = %.2f pound\n", pound, kilograms);
+    }
+     {
         printf("enter weight in kilogram\n");
         scanf("%f", &kilogram);
         gram = (kilogram * 1000);
@@ -93,37 +143,4 @@ int AREA()
         scanf("%f", &litre);
         mililitre = (litre * 1000);
         printf("volume in mililitre = %0.f mililitre\n", mililitre, litre);
-    }
-    if (num == 4)
-    {
-        printf("enter weight in kilogram\n");
-        scanf("%f", &kilograms);
-        pound = (kilograms * 2.205);
-        printf("weight in pounds = %.2f pound\n", pound, kilograms);
-    }
-    
-    return 0;
-   
-}*/
-
-int main(int argc, char const *argv[])
-{
-    char num;
-    printf("\n");
-    printf("\t\t\t\t\t\t\tWelcome to All IN ONE CONVERTER\n\n");
-    printf("Select from below what you want to convert.\n\n");
-    printf(" A = AREA\tD = DISTANCE\t  T = TEMPERATURE\tV = VOLUME\n\n");
-    scanf("%c", &num);
-
-    switch (num)
-    {
-    case 'T':
-        Temperature();
-        break;
-
-    default:
-        printf("Selection is wrong. Please enter proper Value.\n");
-    }
-
-    return 0;
-}
+    }*/
