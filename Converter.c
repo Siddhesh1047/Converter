@@ -69,7 +69,7 @@ int Temperature()
 /*
 int AREA()
 {
-    float num, kilogram, gram, litre, mililitre, centemeter, inch, centigrade, kelvin, pound, kilograms;
+    
     printf("Select from below\n");
     printf(" 1 = Kilogram --> gram\n 2 = centemeter --> inch\n 3 = litre --> mililitre\n 4 = kilogram --> pound\n 5 = centigrade --> kelvin\n");
     scanf("%f", &num);
