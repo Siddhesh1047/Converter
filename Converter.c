@@ -188,6 +188,8 @@ int AREA()
        printf("\nSorry! Conversion of Acre into Square_Inch is not available.\n\n");
     }
 
+    // Conversion of Square_Kilometer starts from here.
+
     return 0;
 }
 
