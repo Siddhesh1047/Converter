@@ -77,6 +77,8 @@ int AREA()
     printf("convert into\n");
     scanf("%f", &num2);
 
+    // Conversion of Hectare starts from here.
+
     if (num == 1 && num2 == 2)
     {
         printf("\nEnter value in Hectare\n\n");
@@ -85,11 +87,108 @@ int AREA()
         printf("\nArea in Acre = %.3f Acre\n\n", Acre, Hectare);
     }
     
+    if (num == 1 && num2 == 3)
+    {
+        printf("\nEnter value in Hectare\n\n");
+        scanf("%f", &Hectare);
+        Square_Kilometer = (Hectare / 100);
+        printf("\nArea in Square_Kilometer = %.1f Square_Kilometer\n\n", Square_Kilometer, Hectare);
+    }
+    
+    if (num == 1 && num2 == 4)
+    {
+        printf("\nEnter value in Hectare\n\n");
+        scanf("%f", &Hectare);
+        Square_Meter = (Hectare * 10000);
+        printf("\nArea in Square_Meter = %.0f Square_Meter\n\n", Square_Meter, Hectare);
+    }
+    
    
+    if (num == 1 && num2 == 5)
+    {
+        printf("\nEnter value in Hectare\n\n");
+        scanf("%f", &Hectare);
+        Square_Mile = (Hectare / 259);
+        printf("\nArea in Square_Mile = %.3f Square_Mile  ( Answer value is Approximate )\n\n", Square_Mile, Hectare);
+    }
+
+    if (num == 1 && num2 == 6)
+    {
+        printf("\nEnter value in Hectare\n\n");
+        scanf("%f", &Hectare);
+        Square_Yard = (Hectare * 11960);
+        printf("\nArea in Square_Yard = %.0f Square_Yard ( Answer value is approximate )\n\n", Square_Yard, Hectare);
+    }
+
+    if (num == 1 && num2 == 7)
+    {
+        printf("\nEnter value in Hectare\n\n");
+        scanf("%f", &Hectare);
+        Square_Foot = (Hectare * 107639);
+        printf("\nArea in Square_Foot = %.0f Square_Foot ( Answer value is approximate )\n\n", Square_Foot, Hectare);
+    }
+
+    if (num == 1 && num2 == 8)
+    {
+       printf("\nSorry! Conversion of Hectare into Square_Inch is not available.\n\n");
+    }
+
+    // Conversion of Acre start from here.
+
+    if (num == 2 && num2 == 1)
+    {
+        printf("\nEnter value in Acre\n\n");
+        scanf("%f", &Acre);
+        Hectare = (Acre / 2.471);
+        printf("\nArea in Hectare = %.3f Hectare\n\n", Hectare, Acre);
+    }
     
-    
+    if (num == 2 && num2 == 3)
+    {
+        printf("\nEnter value in Acre\n\n");
+        scanf("%f", &Acre);
+        Square_Kilometer = (Acre / 247);
+        printf("\nArea in Square_Kilometer = %.3f Square_Kilometer ( Answer Value is approximate )\n\n", Square_Kilometer, Acre);
+    }
+ 
+    if (num == 2 && num2 == 4)
+    {
+        printf("\nEnter value in Acre\n\n");
+        scanf("%f", &Acre);
+        Square_Meter = (Acre * 4047);
+        printf("\nArea in Square_Meter = %.1f Square_Meter\n\n", Square_Meter, Acre);
+    }
+
+    if (num == 2 && num2 == 5)
+    {
+        printf("\nEnter value in Acre\n\n");
+        scanf("%f", &Acre);
+        Square_Mile = (Acre / 640);
+        printf("\nArea in Square_Mile = %.3f Square_Mile\n\n", Square_Mile, Acre);
+    }
+ 
+    if (num == 2 && num2 == 6)
+    {
+        printf("\nEnter value in Acre\n\n");
+        scanf("%f", &Acre);
+        Square_Yard = (Acre * 4840);
+        printf("\nArea in Square_Yard = %.0f Square_Yard\n\n", Square_Yard, Acre);
+    }
+
+    if (num == 2 && num2 == 7)
+    {
+        printf("\nEnter value in Acre\n\n");
+        scanf("%f", &Acre);
+        Square_Foot = (Acre * 43560);
+        printf("\nArea in Square_Foot = %.0f Square_Foot\n\n", Square_Foot, Acre);
+    }
+
+    if (num == 2 && num2 == 8)
+    {
+       printf("\nSorry! Conversion of Acre into Square_Inch is not available.\n\n");
+    }
+
     return 0;
-   
 }
 
 int main(int argc, char const *argv[])
@@ -99,6 +198,7 @@ int main(int argc, char const *argv[])
     printf("\t\t\t\t\t\t\tWelcome to All IN ONE CONVERTER\n\n");
     printf("Select from below what you want to convert.\n\n");
     printf(" A = AREA\tD = DISTANCE\t  T = TEMPERATURE\tV = VOLUME\n\n");
+    printf("Enter code here\n\n");
     scanf("%c", &num);
 
     switch (num)
