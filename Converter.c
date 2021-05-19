@@ -8,7 +8,7 @@ int Temperature()
     printf("\nSelect from below parameters to start conversion\n\n");
     printf(" 1 = Centigrade --> Kelvin \t 3 = Kelvin --> Centigrade\t5 = Fahrenheit --> Centigrade\n");
     printf(" 2 = Centigrade --> Fahrenheit \t 4 = Kelvin --> Fahrenheit\t6 = Fahrenheit --> Kelvin\n\n");
-    printf("Enter value here\n");
+    printf("Enter code here\n\n");
     scanf("%f", &run);
 
     if (run == 1)
@@ -497,13 +497,46 @@ int AREA()
         printf("\nSelection is incorrect. Enter proper value.\n\n");
         goto*(AREA());
     }
-    
-
-    
-
 
     return 0;
 }
+
+// New Function Volume start from here
+
+int VOLUME()
+{
+
+float fun, Litre, Mililitre, Cubic_Meter, Cubic_Foot, Cubic_Inch;
+printf("\nSelect from below parameters to start conversion\n\n");
+printf(" 1 = Litre --> Mililitre     2 = Mililitre --> Litre\n\n");
+printf("Enter code here\n\n");
+scanf("%f", &fun);
+
+if (fun == 1)
+    {
+        printf("\nEnter Volume in Litre\n\n");
+        scanf("%f", &Litre);
+        Mililitre = (Litre * 1000);
+        printf("\nVolume in Mililitre = %.0f Mililitre\n\n", Mililitre, Litre);
+    }
+
+ if (fun == 2)
+    {
+        printf("\nEnter Volume in Mililitre\n\n");
+        scanf("%f", &Mililitre);
+        Litre = (Mililitre / 1000);
+        printf("\nVolume in Litre = %.0f Litre\n\n", Litre, Mililitre);
+    }
+
+ if (fun != 1 && fun != 2)
+ {
+     printf("\nSelection is wrong. Please enter proper value\n\n");
+     goto*(VOLUME());
+ }
+    
+return 0;
+}
+
 
 int main(int argc, char const *argv[])
 {
@@ -517,13 +550,14 @@ int main(int argc, char const *argv[])
 
     switch (num)
     {
-    case 'T':
-        Temperature();
-        break;
+    case 'T': Temperature();
+              break;
 
-    case 'A':
-        AREA();
-        break;
+    case 'A': AREA();
+              break;
+
+    case 'V': VOLUME();
+              break;
 
     default:
         printf("\nSelection is wrong. Please enter proper Value.\n\n");
@@ -552,10 +586,4 @@ int main(int argc, char const *argv[])
         inch = (centemeter / 2.54);
         printf("distance in inches = %2.f inch\n", inch, centemeter);
     }
-    if (num == 3)
-    {
-        printf("enter volume in litre\n");
-        scanf("%f", &litre);
-        mililitre = (litre * 1000);
-        printf("volume in mililitre = %0.f mililitre\n", mililitre, litre);
-    }*/
+   */
